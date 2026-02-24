@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: my-app-dev
+
+resources:
+  - ../../base
+
+images:
+  - name: nexus.example.com:8082/my-app
+    newTag: latest    # Jenkins가 이 태그를 업데이트함
