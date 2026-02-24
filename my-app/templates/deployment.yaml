@@ -27,6 +27,7 @@ spec:
             initialDelaySeconds: 10
             periodSeconds: 5
           readicessProbe: 
+            httpGet:
               path: {{ .Values.health.path }}
               port: {{ .Values.health.port }}
             initialDelaySeconds: 10
