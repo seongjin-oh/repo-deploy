@@ -26,9 +26,11 @@ spec:
               port: {{ .Values.health.port }}
             initialDelaySeconds: 10
             periodSeconds: 5
-          readicessProbe: 
+          readinessProbe: 
             httpGet:
               path: {{ .Values.health.path }}
               port: {{ .Values.health.port }}
             initialDelaySeconds: 10
             periodSeconds: 5
+      imagePullSecrets:
+        - name: nexus-registry-secret
