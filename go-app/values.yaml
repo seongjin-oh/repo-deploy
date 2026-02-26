@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: seongacr.azurecr.io/go-app
-  tag: latest
+  tag: "9"
   pullPolicy: Always
 
 service:
