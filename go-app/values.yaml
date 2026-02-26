@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: seongacr.azurecr.io/go-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8010
+
+health:
+  path: /health
+  port: 8010

@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: seongacr.azurecr.io/py-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8020
+
+health:
+  path: /health
+  port: 8020
