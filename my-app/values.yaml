@@ -1,7 +1,8 @@
 replicaCount: 2
 
 image:
-  repository: nexus-docker-8082.nexus.svc.cluster.local:8082/my-app
+#  repository: nexus-docker-8082.nexus.svc.cluster.local:8082/my-app
+  repository: seongacr.azurecr.io/my-app
   tag: latest
   pullPolicy: IfNotPresent
 
