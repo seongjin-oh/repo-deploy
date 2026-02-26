@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: seongacr.azurecr.io/py-app
-  tag: "6"
+  tag: "7"
   pullPolicy: Always
 
 service:
