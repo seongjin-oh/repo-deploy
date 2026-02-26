@@ -1,8 +1,13 @@
 replicaCount: 2
 
 image:
+<<<<<<< HEAD
   repository: seongacr.azureacr.io/my-app
   tag: "15"
+=======
+  repository: nexus-docker-8082.nexus.svc.cluster.local:8082/my-app
+  tag: latest
+>>>>>>> 728f803 (update)
   pullPolicy: IfNotPresent
 
 # AKS-ACR 연동 시 imagePullSecrets 불필요
