@@ -3,7 +3,7 @@ replicaCount: 2
 image:
 #  repository: nexus-docker-8082.nexus.svc.cluster.local:8082/my-app
   repository: seongacr.azurecr.io/my-app
-  tag: "18"
+  tag: "19"
   pullPolicy: IfNotPresent
 
 # AKS-ACR 연동 시 imagePullSecrets 불필요
